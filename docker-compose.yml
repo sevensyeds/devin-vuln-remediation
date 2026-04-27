@@ -1,0 +1,13 @@
+services:
+  orchestrator:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Mount the Superset checkout read-only so Bandit can scan the live code
+      - ${SUPERSET_LOCAL_PATH:-../superset-master}:/superset:ro
+      # Persist SQLite state across restarts
+      - ./data:/data
+    restart: unless-stopped

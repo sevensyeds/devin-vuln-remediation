@@ -1,0 +1,24 @@
+{
+  "session_id": "devin-mock-session-1",
+  "status": "exit",
+  "status_detail": "finished",
+  "pull_requests": [
+    {
+      "pr_url": "https://github.com/sevensyeds/superset/pull/42",
+      "pr_state": "open"
+    }
+  ],
+  "structured_output": {
+    "vulnerability_fixed": true,
+    "root_cause_summary": "yaml.load with the default Loader was used to parse example bundle YAML during import. Replaced with yaml.safe_load, which is sufficient because example YAML only contains basic Python types.",
+    "files_changed": ["superset/examples/utils.py"],
+    "tests_run": true,
+    "test_results_summary": "Targeted import check and existing examples utils tests pass.",
+    "backward_compatibility_risk": "none",
+    "needs_human_review": false,
+    "confidence": 0.92,
+    "recommended_follow_up": ""
+  },
+  "acus_consumed": 2.4,
+  "url": "https://app.devin.ai/sessions/devin-mock-session-1"
+}

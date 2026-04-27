@@ -1,0 +1,9 @@
+{
+  "session_id": "devin-mock-session-1",
+  "status": "running",
+  "status_detail": "working",
+  "pull_requests": [],
+  "structured_output": null,
+  "acus_consumed": 1.2,
+  "url": "https://app.devin.ai/sessions/devin-mock-session-1"
+}

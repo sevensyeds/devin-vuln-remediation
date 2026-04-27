@@ -1,0 +1,24 @@
+{
+  "session_id": "devin-mock-session-2",
+  "status": "exit",
+  "status_detail": "finished",
+  "pull_requests": [
+    {
+      "pr_url": "https://github.com/sevensyeds/superset/pull/43",
+      "pr_state": "open"
+    }
+  ],
+  "structured_output": {
+    "vulnerability_fixed": true,
+    "root_cause_summary": "Flipped the default metastore cache codec from PickleKeyValueCodec to JsonKeyValueCodec. Operators who explicitly configure pickle are unaffected.",
+    "files_changed": ["superset/extensions/metastore_cache.py"],
+    "tests_run": true,
+    "test_results_summary": "Two existing tests assume pickle-serializable objects as cache values. They fail under JSON without also changing the tests; I did not rewrite tests.",
+    "backward_compatibility_risk": "medium",
+    "needs_human_review": true,
+    "confidence": 0.68,
+    "recommended_follow_up": "Audit in-tree callers to confirm JSON-safe values; update tests if acceptable."
+  },
+  "acus_consumed": 4.8,
+  "url": "https://app.devin.ai/sessions/devin-mock-session-2"
+}

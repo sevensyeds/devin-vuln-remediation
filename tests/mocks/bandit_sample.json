@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "test_id": "B506",
+      "test_name": "yaml_load",
+      "issue_severity": "MEDIUM",
+      "issue_confidence": "HIGH",
+      "filename": "/superset/superset/examples/utils.py",
+      "line_number": 261,
+      "code": "yaml.load(contents, Loader=yaml.Loader)",
+      "issue_cwe": {"id": 502, "link": "https://cwe.mitre.org/data/definitions/502.html"}
+    },
+    {
+      "test_id": "B324",
+      "test_name": "hashlib",
+      "issue_severity": "HIGH",
+      "issue_confidence": "HIGH",
+      "filename": "/superset/superset/utils/hashing.py",
+      "line_number": 34,
+      "code": "hashlib.md5()",
+      "issue_cwe": {"id": 327, "link": "https://cwe.mitre.org/data/definitions/327.html"}
+    },
+    {
+      "test_id": "B301",
+      "test_name": "pickle",
+      "issue_severity": "MEDIUM",
+      "issue_confidence": "HIGH",
+      "filename": "/superset/superset/extensions/metastore_cache.py",
+      "line_number": 58,
+      "code": "codec = config.get(\"CODEC\") or PickleKeyValueCodec()",
+      "issue_cwe": {"id": 502, "link": "https://cwe.mitre.org/data/definitions/502.html"}
+    },
+    {
+      "test_id": "B101",
+      "test_name": "assert_used",
+      "issue_severity": "LOW",
+      "issue_confidence": "HIGH",
+      "filename": "/superset/superset/random_other_file.py",
+      "line_number": 99,
+      "code": "assert x",
+      "issue_cwe": {"id": 703, "link": "https://cwe.mitre.org/data/definitions/703.html"}
+    }
+  ]
+}

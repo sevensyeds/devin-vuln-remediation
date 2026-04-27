@@ -1,0 +1,9 @@
+{
+  "session_id": "devin-mock-session-3",
+  "status": "suspended",
+  "status_detail": "usage_limit_exceeded",
+  "pull_requests": [],
+  "structured_output": null,
+  "acus_consumed": 10.0,
+  "url": "https://app.devin.ai/sessions/devin-mock-session-3"
+}
